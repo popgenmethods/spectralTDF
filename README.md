@@ -2,29 +2,17 @@
 
 ### Table of Contents
 * [SUMMARY](#SUMMARY)
-### LICENSES:
-### REQUIREMENTS:
-### USAGE:
-### EXTERNAL LIBRARIES LICENSES
-### CONTACT:
-### HISTORY:
+* [LICENSES](#LICENSES)
+* [REQUIREMENTS](#REQUIREMENTS)
+* [USAGE](#USAGE)
+* [EXTERNAL LIBRARIES LICENSES](#EXTERNAL-LIBRARIES-LICENSES)
+* [CONTACT](#CONTACT)
+* [VERSION HISTORY](#VERSION-HISTORY)
 
-
-* [Human Recombination Maps](#human-recombination-maps)
-* [Human Population Sizes](#human-population-sizes)
-* [Installation](#installation)
-* [Usage](#usage)
-    * [make_table](#make_table)
-    * [hyperparam](#hyperparam)
-    * [optimize](#optimize)
-    * [compute_r2](#compute_r2)
-* [Example](#example)
-* [FAQ](#faq)
-* [Citation](#citation)
 
 ### SUMMARY:
 
-`specrtralTDF` is a software program for computing the transition density function of the Wright-Fisher diffusion process in a population of piecewise constant size. spectralTDF is an implementation of the method described in:
+`spectralTDF` is a software program for computing the transition density function of the Wright-Fisher diffusion process in a population of piecewise constant size. spectralTDF is an implementation of the method described in:
 
 Matthias Steinrücken, Ethan M Jewett, and Yun S. Song (2016). [SpectralTDF: transition densities of diffusion processes with time-varying selection parameters, mutation rates and effective population sizes](https://doi.org/10.1093/bioinformatics/btv627). Bioinformatics. 32:795–797.
 
@@ -34,7 +22,7 @@ Matthias Steinrücken, Ethan M Jewett, and Yun S. Song (2016). [SpectralTDF: tra
 
 The source code is released under the GNU General Public License, version 3.  The full text of the license can be found at http://www.gnu.org/licenses/.
 
-This software comes packaged with several external libraries. See Section 5. EXTERNAL LIBRARIES, for the respective license information and download links.
+This software comes packaged with several external libraries. See Section [EXTERNAL LIBRARIES LICENSES](#EXTERNAL-LIBRARIES-LICENSES), for the respective license information and download links.
 
 
 ### REQUIREMENTS:
@@ -44,30 +32,30 @@ This software comes packaged with several external libraries. See Section 5. EXT
 
 ### USAGE:
 
-Download the file spectralTDF.jar and place it in a convenient location on your computer.  To run spectralTDF, open a command terminal and switch to the directory containing spectralTDF.jar. Execute
+Download the java-executable file [spectralTDF.jar](https://github.com/popgenmethods/spectralTDF/raw/main/spectralTDF.jar) and place it in a convenient location on your computer.  To run `spectralTDF`, open a command terminal and switch to the directory containing `spectralTDF.jar`. Execute
 
 ```
 java -cp spectralTDF.jar TDF.spectralTDF <arguments>
 ```
 
-See the user manual for further details.
+See the [user manual](https://github.com/popgenmethods/spectralTDF/raw/main/SpectralTDFuserManual.pdf) for further details.
 
 
 
-### EXTERNAL LIBRARIES LICENSES
+### EXTERNAL LIBRARIES LICENSES:
 
 The following external libraries are included in this release of spectralTDF:
 
 
-- JSAP-2.1.jar
+- `JSAP-2.1.jar`
 	Download from http://sourceforge.net/projects/jsap/files/jsap/2.1/ (alt: http://www.martiansoftware.com/jsap/).
 	License: GNU Library or Lesser General Public License version 2.0 (LGPLv2) (http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
-- arpack_combined_all.jar
+- `arpack_combined_all.jar`
 	Download from http://en.sourceforge.jp/projects/sfnet_f2j/releases/
 	License: BSD License
 
-- lapack_simple.jar
+- `lapack_simple.jar`
 	Download jlapack-0.8.tgz from http://www.netlib.org/java/f2j/ and unpack. lapack_simple.jar can be found in this archive.
 	License: Custom License:
 	Copyright © 2015 The University of Tennessee. All rights reserved.
@@ -85,6 +73,6 @@ The following external libraries are included in this release of spectralTDF:
 Please contact ejewett@berkeley.edu or steinrue@uchicago.edu with bugs, comments, or questions regarding the software.
 
 
-### HISTORY:
+### VERSION HISTORY:
 
 1.0.0: Initial release.
